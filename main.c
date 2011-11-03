@@ -96,7 +96,9 @@ extern int main()
 	printf("printf werkt\r\n\r\n");
 	
 
+
 	printf("DSP1 - Sinus generator\r\n\r\n");
+
 
 		
 	PINSEL1 |= 1<<19;
