@@ -7,7 +7,7 @@ static const char HexCharsCap[] = "0123456789ABCDEF";
 static const char HexCharsNoCap[] = "0123456789abcdef";
 #define hexcharNoCap(x)	HexCharsNoCap[(x)&0x0F]
 
-static int print(char **out, int *varg);
+static int print(int *varg);
 
 static void printc(char C);
 static void printi(char base, char isSigned, char cap, long n);
@@ -17,7 +17,7 @@ int printf (const char *format, ...)
 { 
   int *varg = (int *)(&format);
 
-  return print(0, varg);
+  return print(varg);
 }
 
 static void printc(char C)
@@ -103,7 +103,7 @@ static void prints(char *string)
 	return;
 }
 
-static int print(char **out, int *varg)
+static int print(int *varg)
 {
 	char *format = (char *) (*varg++);
 	
