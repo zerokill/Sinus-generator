@@ -108,7 +108,7 @@ extern int main()
 	 */
 	while(1) 	 
 	{
-
+		ik zet hier weer een fout!
 		
 		keys = Keys_Read();
 		if(keys == key_s)
