@@ -95,7 +95,9 @@ extern int main()
 	putstring_serial0("init done\r\n");
 	printf("printf werkt\r\n\r\n");
 	
+
 	printf("DSP1 - Sinus generator - master branch\r\n\r\n");
+
 		
 	PINSEL1 |= 1<<19;
 	PINSEL1 &= ~(1<<18);
@@ -109,13 +111,13 @@ extern int main()
 
 		
 		keys = Keys_Read();
-		if(keys == key_s)
+		if(keys == key_h)
 		{
 			keys = 0;
 			if (freq_deler < 511) freq_deler++;
 			printf("deler: %u \r\n",freq_deler);
 		}
-		if(keys == key_h)
+		if(keys == key_s)
 		{
 			keys = 0;
 			if (freq_deler > 1) freq_deler--;
