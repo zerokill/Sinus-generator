@@ -1,0 +1,111 @@
+[Config]
+Relative path=1
+Compilator.FileName=make
+Compilator.PSPar=
+Compilator.Log=
+Compilator.Run=
+Compilator.DefaultDir=
+Compilator.SaveAll=1
+Compilator.Capture=1
+Compilator.ParsLog=%F:%L:
+Compilator.HideOutput=1
+Prog1=
+Prog2=
+Prog3=
+Prog4=
+Prog5=
+DefaultDir=
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+FileFormat=0
+DocumentRoot=
+HTServer=
+[Project tree]
+Project
+	+Files
+		+includes
+			keys.h
+			LPC214x.h
+			leds.h
+			sin.h
+			pll.h
+			vic.h
+			serial.h
+			printf.h
+		+compile
+			crt0.s
+			main.c
+			keys.c
+			printf.c
+			leds.c
+			pll.c
+			vic.c
+			serial.c
+		+others
+			Makefile
+			Project.x
+[Open project files]
+0=main.c
+1=Makefile
+2=crt0.s
+3=vic.c
+4=vic.h
+5=leds.c
+6=sin.h
+7=keys.c
+8=keys.h
+9=printf.c
+10=printf.h
+11=serial.c
+12=serial.h
+13=target.h
+14=pll.c
+[Selected Project Files]
+Main=main.c
+Selected=sin.h
+[main.c]
+TopLine=1
+Caret=1,32
+[Makefile]
+TopLine=1
+Caret=1,1
+[crt0.s]
+TopLine=21
+Caret=4,21
+[vic.c]
+TopLine=15
+Caret=20,19
+[vic.h]
+TopLine=1
+Caret=3,10
+[leds.c]
+TopLine=2
+Caret=2,30
+[sin.h]
+TopLine=576
+Caret=3,738
+[keys.c]
+TopLine=52
+Caret=60,55
+[keys.h]
+TopLine=15
+Caret=14,37
+[printf.c]
+TopLine=7
+Caret=1,16
+[printf.h]
+TopLine=1
+Caret=1,1
+[serial.c]
+TopLine=1
+Caret=15,25
+[serial.h]
+TopLine=1
+Caret=1,13
+[target.h]
+TopLine=7
+Caret=36,32
+[pll.c]
+TopLine=26
+Caret=38,53

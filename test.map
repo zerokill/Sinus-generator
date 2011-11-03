@@ -1,0 +1,194 @@
+Archive member included because of file (symbol)
+
+c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+                              sensirion.o (__subdf3)
+c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+                              sensirion.o (__muldf3)
+c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+                              sensirion.o (__truncdfsf2)
+
+Discarded input sections
+
+ .debug_line    0x00000000        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .debug_info    0x00000000        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .debug_abbrev  0x00000000        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .debug_aranges
+                0x00000000        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .debug_line    0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .debug_info    0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .debug_abbrev  0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .debug_aranges
+                0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .debug_line    0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .debug_info    0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .debug_abbrev  0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .debug_aranges
+                0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .debug_line    0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+ .debug_info    0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+ .debug_abbrev  0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+ .debug_aranges
+                0x00000000        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x0007e000
+ram              0x40000000         0x00008000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+LOAD pll.o
+LOAD main.o
+LOAD leds.o
+LOAD sensirion.o
+START GROUP
+LOAD c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a
+LOAD c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2/../../../../arm-elf/lib\libg.a
+LOAD c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2/../../../../arm-elf/lib\libc.a
+END GROUP
+                0x00008000                __ram_size__ = 0x8000
+                0x00000100                __STACK_SIZE_FIQ__ = 0x100
+                0x00000100                __STACK_SIZE_IRQ__ = 0x100
+                0x00000004                __STACK_SIZE_SUPERVISOR__ = 0x4
+                0x00000004                __STACK_SIZE_ABORT__ = 0x4
+                0x00000004                __STACK_SIZE_UNDEFINED__ = 0x4
+                0x40007df0                __stack_end__ = (((((((0x40000000 + __ram_size__) - 0x4) - __STACK_SIZE_FIQ__) - __STACK_SIZE_IRQ__) - __STACK_SIZE_SUPERVISOR__) - __STACK_SIZE_ABORT__) - __STACK_SIZE_UNDEFINED__)
+                0x40007df4                __stack_end_undefined__ = ((((((0x40000000 + __ram_size__) - 0x4) - __STACK_SIZE_FIQ__) - __STACK_SIZE_IRQ__) - __STACK_SIZE_SUPERVISOR__) - __STACK_SIZE_ABORT__)
+                0x40007df8                __stack_end_abort__ = (((((0x40000000 + __ram_size__) - 0x4) - __STACK_SIZE_FIQ__) - __STACK_SIZE_IRQ__) - __STACK_SIZE_SUPERVISOR__)
+                0x40007dfc                __stack_end_supervisor__ = ((((0x40000000 + __ram_size__) - 0x4) - __STACK_SIZE_FIQ__) - __STACK_SIZE_IRQ__)
+                0x40007efc                __stack_end_irq__ = (((0x40000000 + __ram_size__) - 0x4) - __STACK_SIZE_FIQ__)
+                0x40007ffc                __stack_end_fiq__ = ((0x40000000 + __ram_size__) - 0x4)
+                0x40007ffc                __stack_end__ = 0x40007ffc
+                0x00000000                . = 0x0
+
+startup
+ *(.startup)
+
+prog            0x00000000     0x1a94
+ *(.text)
+ .text          0x00000000      0x1c8 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+                0x00000064                IRQHandler1
+                0x00000028                FIQHandler
+                0x00000084                __disable_interrupts
+                0x00000094                __enable_interrupts
+                0x00000000                _start
+                0x00000044                IRQHandler0
+ .text          0x000001c8       0xf4 pll.o
+                0x000001c8                PLL_init
+ .text          0x000002bc      0x3ec main.o
+                0x000002bc                MyTimerInterrupt
+                0x00000574                main
+                0x000003f0                InitTimer
+                0x00000600                cool_init
+                0x00000374                MyTimerInterrupt1
+ .text          0x000006a8      0x124 leds.o
+                0x00000708                LED_put
+                0x000006a8                LED_init
+ .text          0x000007cc      0x9b8 sensirion.o
+                0x00000b44                s_transstart
+                0x000009cc                s_read_byte
+                0x00000d58                s_read_statusreg
+                0x00000c34                s_connectionreset
+                0x000007cc                delay
+                0x00000d14                s_softreset
+                0x00000834                s_write_byte
+                0x00000dc4                s_write_statusreg
+                0x00000e34                s_get
+ .text          0x00001184      0x400 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+                0x00001518                __floatdidf
+                0x00001498                __floatsidf
+                0x00001470                __aeabi_ui2d
+                0x00001184                __aeabi_drsub
+                0x000014c4                __extendsfdf2
+                0x00001190                __adddf3
+                0x00001470                __floatunsidf
+                0x00001190                __aeabi_dadd
+                0x00001504                __aeabi_ul2d
+                0x0000118c                __aeabi_dsub
+                0x00001504                __floatundidf
+                0x00001498                __aeabi_i2d
+                0x00001518                __aeabi_l2d
+                0x000014c4                __aeabi_f2d
+                0x0000118c                __subdf3
+ .text          0x00001584      0x470 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+                0x000017f0                __aeabi_ddiv
+                0x00001584                __aeabi_dmul
+                0x000017f0                __divdf3
+                0x00001584                __muldf3
+ .text          0x000019f4       0xa0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+                0x000019f4                __aeabi_d2f
+                0x000019f4                __truncdfsf2
+ *(.rodata)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x00001a94        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .glue_7        0x00001a94        0x0 pll.o
+ .glue_7        0x00001a94        0x0 main.o
+ .glue_7        0x00001a94        0x0 leds.o
+ .glue_7        0x00001a94        0x0 sensirion.o
+ .glue_7        0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .glue_7        0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .glue_7        0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+ *(.glue_7t)
+ .glue_7t       0x00001a94        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .glue_7t       0x00001a94        0x0 pll.o
+ .glue_7t       0x00001a94        0x0 main.o
+ .glue_7t       0x00001a94        0x0 leds.o
+ .glue_7t       0x00001a94        0x0 sensirion.o
+ .glue_7t       0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .glue_7t       0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .glue_7t       0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+                0x00001a94                __end_of_text__ = .
+
+.vfp11_veneer   0x00001a94        0x0
+ .vfp11_veneer  0x00001a94        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .vfp11_veneer  0x00001a94        0x0 pll.o
+ .vfp11_veneer  0x00001a94        0x0 main.o
+ .vfp11_veneer  0x00001a94        0x0 leds.o
+ .vfp11_veneer  0x00001a94        0x0 sensirion.o
+ .vfp11_veneer  0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .vfp11_veneer  0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .vfp11_veneer  0x00001a94        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+
+.data           0x40000000        0x2 load address 0x00001a94
+                0x40000000                __data_beg__ = .
+                0x00001a94                __data_beg_src__ = __end_of_text__
+ *(.data)
+ .data          0x40000000        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .data          0x40000000        0x0 pll.o
+ .data          0x40000000        0x2 main.o
+                0x40000001                high
+                0x40000000                pwm_set
+ .data          0x40000002        0x0 leds.o
+ .data          0x40000002        0x0 sensirion.o
+ .data          0x40000002        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .data          0x40000002        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .data          0x40000002        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+                0x40000002                __data_end__ = .
+                0x40000002                __data_end = .
+
+.bss            0x40000002        0x2
+                0x40000002                __bss_beg__ = .
+                0x40000002                __bss_start = .
+ *(.bss)
+ .bss           0x40000002        0x0 C:\DOCUME~1\franc\LOCALS~1\Temp/ccXEOo2q.o
+ .bss           0x40000002        0x0 pll.o
+ .bss           0x40000002        0x2 main.o
+                0x40000002                low
+ .bss           0x40000004        0x0 leds.o
+ .bss           0x40000004        0x0 sensirion.o
+ .bss           0x40000004        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_addsubdf3.o)
+ .bss           0x40000004        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_muldivdf3.o)
+ .bss           0x40000004        0x0 c:/progra~1/armdevenv/bin/../lib/gcc/arm-elf/4.2.2\libgcc.a(_truncdfsf2.o)
+                0x40000004                __bss_end = .
+                0x40000004                . = ALIGN (0x4)
+                0x40000004                . = ALIGN (0x4)
+                0x40000004                _end = .
+                0x40000004                _bss_end__ = .
+                0x40000004                __bss_end__ = .
+                0x40000004                __end__ = .
+                0x40000004                PROVIDE (end, .)
+                
